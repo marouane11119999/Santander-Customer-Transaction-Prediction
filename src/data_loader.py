@@ -15,3 +15,12 @@ def load_data(id :int, location: str) -> pd.DataFrame:
     file_path = os.path.join(location, f"{dataset.details['name']}.csv")
     dataset.frame.to_csv(path_or_buf=file_path, index=False)
     return dataset.frame
+
+def load_data_from_file(file_path: str) -> pd.DataFrame:
+    """
+    Load dataset from a local CSV file
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+    print(f"Loading dataset from file: {file_path}...")
+    return pd.read_csv(file_path)
