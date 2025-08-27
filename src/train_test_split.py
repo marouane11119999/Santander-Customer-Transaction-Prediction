@@ -29,7 +29,7 @@ def create_unified_test_split(
         The test set saved to `save_path`.
     """
     train_data, test_data = train_test_split(
-        data, test_size=test_size, random_state=random_state, shuffle=True
+        data, test_size=test_size, random_state=random_state, shuffle=True, stratify= data['target']
     )
 
     test_data.to_csv(save_path, index=False)
