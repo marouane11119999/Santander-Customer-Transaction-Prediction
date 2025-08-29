@@ -7,11 +7,11 @@
 
 - Features sind **weitgehend unkorreliert**.
     
-- Einige Features weisen eine **Standardabweichung = 0** auf (keine Varianz).
+- Feature mit **Standardabweichung nahe 0** (fast keine Varianz).
     
 - **Keine fehlenden Werte** im Datensatz vorhanden.
     
-- Auffällig: **Sehr wenige eindeutige Werte pro Spalte**
+- Auffällig: **Sehr wenig einzigartige Werte pro Spalte**
 
 ### 2. Arbeitsaufteilung
 
