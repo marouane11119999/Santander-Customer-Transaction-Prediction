@@ -11,7 +11,10 @@ dependencies:
   - seaborn
   - jupyter
   - ipykernel
+  - xgboost
   - pip
+  - imbalanced-learn
   - pip:
       - tqdm
       - joblib
+      - umap-learn
